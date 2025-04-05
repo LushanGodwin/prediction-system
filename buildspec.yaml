@@ -12,6 +12,7 @@ phases:
     commands:
       - docker push 329599637147.dkr.ecr.us-east-1.amazonaws.com/prediction-system:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"prediction-system","imageUri":"%s"}]' 505076619770.dkr.ecr.us-east-1.amazonaws.com/prediction-system:latest > imagedefinitions.json   
+      - printf '[{"name":"prediction-system","imageUri":"%s"}]' 329599637147.dkr.ecr.us-east-1.amazonaws.com/prediction-system:latest > imagedefinitions.json   
 artifacts:
-  files: imagedefinitions.json
+  files: 
+  - imagedefinitions.json
